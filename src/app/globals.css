@@ -120,10 +120,48 @@
   * {
     @apply border-border outline-ring/50;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
+  
   html {
     @apply font-sans;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ship%20with%20cargo-Lmy0ZxThbv56MoiMYmyNOOhVqncWGv.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.15;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    z-index: 0;
+    animation: shipFloat 20s ease-in-out infinite;
+  }
+  
+  body > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  @keyframes shipFloat {
+    0%, 100% {
+      opacity: 0.08;
+      transform: translateY(0px);
+    }
+    50% {
+      opacity: 0.12;
+      transform: translateY(-8px);
+    }
   }
 }
