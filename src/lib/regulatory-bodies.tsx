@@ -1,0 +1,215 @@
+export const regulatoryBodies = [
+  {
+    id: 'imo',
+    name: 'International Maritime Organization',
+    acronym: 'IMO',
+    url: 'https://www.imo.org',
+    description: 'UN specialized agency for maritime safety, security, and environmental protection',
+    standards: ['SOLAS', 'IMDG Code', 'ISM Code', 'ISPS Code', 'MARPOL'],
+    scope: 'Global maritime standards and regulations',
+  },
+  {
+    id: 'wco',
+    name: 'World Customs Organization',
+    acronym: 'WCO',
+    url: 'https://www.wcoomd.org',
+    description: 'Independent inter-governmental organization for customs cooperation',
+    standards: ['Harmonized System', 'AEO Standards', 'HS Classification'],
+    scope: 'Global customs and tariff standards',
+  },
+  {
+    id: 'iso',
+    name: 'International Organization for Standardization',
+    acronym: 'ISO',
+    url: 'https://www.iso.org',
+    description: 'International body for development of management system standards',
+    standards: ['ISO 9001', 'ISO 14001', 'ISO 45001', 'ISO 50001'],
+    scope: 'Quality, environmental, and safety management systems',
+  },
+  {
+    id: 'iata',
+    name: 'International Air Transport Association',
+    acronym: 'IATA',
+    url: 'https://www.iata.org',
+    description: 'Trade association for airlines covering air cargo and dangerous goods',
+    standards: ['IATA DGR', 'Air Waybill Standards', 'TSA Requirements'],
+    scope: 'Air cargo and logistics standards',
+  },
+  {
+    id: 'ics',
+    name: 'International Chamber of Shipping',
+    acronym: 'ICS',
+    url: 'https://www.ics-shipping.org',
+    description: 'Principal international association of ship owners and operators',
+    standards: ['Maritime Best Practices', 'Industry Guidelines', 'Sustainability'],
+    scope: 'Maritime industry representation and standards',
+  },
+  {
+    id: 'cbp',
+    name: 'U.S. Customs and Border Protection',
+    acronym: 'CBP',
+    url: 'https://www.cbp.gov',
+    description: 'U.S. federal agency for border security and customs enforcement',
+    standards: ['CTPAT', 'CSI', 'AMS', '24-Hour Rule'],
+    scope: 'U.S. import/export compliance and security',
+  },
+  {
+    id: 'wca',
+    name: 'World Cargo Alliance',
+    acronym: 'WCA',
+    url: 'https://www.worldcargoalliance.org',
+    description: 'Represents cargo supply chain parties globally',
+    standards: ['Cargo Security Best Practices', 'Industry Standards'],
+    scope: 'Global cargo security and supply chain',
+  },
+  {
+    id: 'icc',
+    name: 'International Chamber of Commerce',
+    acronym: 'ICC',
+    url: 'https://iccwbo.org',
+    description: 'Representative organization for international business',
+    standards: ['Incoterms', 'UCP 600 (Documentary Credits)'],
+    scope: 'International trade terms and practices',
+  },
+];
+
+export const auditCycles = [
+  {
+    standard: 'ISO 9001',
+    frequency: 'Annual surveillance + 3-year recertification',
+    auditType: 'Third-party certification',
+    scope: 'Quality Management System',
+  },
+  {
+    standard: 'ISO 14001',
+    frequency: 'Annual surveillance + 3-year recertification',
+    auditType: 'Third-party certification',
+    scope: 'Environmental Management System',
+  },
+  {
+    standard: 'ISO 45001',
+    frequency: 'Annual surveillance + 3-year recertification',
+    auditType: 'Third-party certification',
+    scope: 'Occupational Health & Safety Management',
+  },
+  {
+    standard: 'SOLAS/ISPS/ISM Code',
+    frequency: 'Annual Port State Control inspections',
+    auditType: 'Government inspection',
+    scope: 'Port facility compliance',
+  },
+  {
+    standard: 'AEO Certification',
+    frequency: 'Annual audits + 3-year reassessment',
+    auditType: 'Customs authority audit',
+    scope: 'Customs compliance and security',
+  },
+  {
+    standard: 'CTPAT',
+    frequency: 'Every 2 years + annual self-assessment',
+    auditType: 'CBP verification audits',
+    scope: 'Supply chain security',
+  },
+];
+
+export const complianceFramework = [
+  {
+    pillar: 'Safety & Security',
+    standards: ['SOLAS', 'ISPS Code', 'CTPAT', 'CSI'],
+    keyActivities: [
+      'Regular safety drills and training',
+      'Security perimeter management',
+      'Vessel/cargo inspection procedures',
+      'Incident reporting and investigation',
+      'Emergency response planning',
+    ],
+  },
+  {
+    pillar: 'Quality Management',
+    standards: ['ISO 9001', 'ISM Code'],
+    keyActivities: [
+      'Service level monitoring',
+      'Customer satisfaction surveys',
+      'Process documentation and control',
+      'Corrective/preventive actions',
+      'Internal audits and management reviews',
+    ],
+  },
+  {
+    pillar: 'Environmental Responsibility',
+    standards: ['ISO 14001', 'MARPOL'],
+    keyActivities: [
+      'Waste management programs',
+      'Emissions monitoring',
+      'Spill prevention and response',
+      'Environmental impact assessments',
+      'Sustainability reporting',
+    ],
+  },
+  {
+    pillar: 'Occupational Health & Safety',
+    standards: ['ISO 45001', 'ILO Conventions'],
+    keyActivities: [
+      'Hazard identification and risk assessment',
+      'Worker training and competency',
+      'Incident investigation',
+      'Health and safety monitoring',
+      'Ergonomic workplace assessments',
+    ],
+  },
+  {
+    pillar: 'Customs Compliance',
+    standards: ['AEO', 'WCO Standards', 'Local Regulations'],
+    keyActivities: [
+      'HS code classification verification',
+      'Tariff calculation accuracy',
+      'Import/export documentation',
+      'Valuation compliance',
+      'Customs broker coordination',
+    ],
+  },
+  {
+    pillar: 'Supply Chain Visibility',
+    standards: ['UN/EDIFACT', 'SMDG', 'XML-EDI'],
+    keyActivities: [
+      'Real-time tracking system maintenance',
+      'EDI integration with partners',
+      'Exception management protocols',
+      'Data security and privacy',
+      'Performance metrics reporting',
+    ],
+  },
+];
+
+export const competencyRequirements = [
+  {
+    role: 'Customs Broker',
+    certifications: ['Licensed Customs Broker', 'Tariff Classification Training', 'Origin Rules Training'],
+    training: 'Annual compliance updates',
+    experience: 'Minimum 3 years experience',
+  },
+  {
+    role: 'Terminal Operations Manager',
+    certifications: ['SOLAS/ISPS Awareness', 'IMDG Training', 'ISO 9001 Auditor'],
+    training: 'Bi-annual safety and compliance training',
+    experience: 'Minimum 5 years in port operations',
+  },
+  {
+    role: 'Dangerous Goods Handler',
+    certifications: ['IMDG Level 3', 'Security Awareness', 'First Aid'],
+    training: 'Annual hazmat refresher training',
+    experience: 'Minimum 1 year under supervision',
+  },
+  {
+    role: 'Safety Officer',
+    certifications: ['ISO 45001 Lead Auditor', 'SOLAS/ISPS Training', 'Incident Investigation'],
+    training: 'Bi-annual safety training',
+    experience: 'Minimum 3 years in safety management',
+  },
+  {
+    role: 'IT/Systems Administrator',
+    certifications: ['Data Security Certification', 'ISO 27001 Awareness', 'EDI System Administration'],
+    training: 'Annual cybersecurity training',
+    experience: 'Minimum 2 years in logistics IT systems',
+  },
+];
